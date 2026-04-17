@@ -15,13 +15,13 @@
 /* === TOKENS =============================================== */
 
 :root {
-  --bg:             #faf9f7;
+  --bg:             #f5f3ef;
   --surface:        #f1efe9;
-  --dark:           #1a1916;
+  --dark:           #121210;
   --text:           #1a1916;
-  --muted:          #6b6960;
-  --subtle:         #9c9a91;
-  --accent:         #c8522a;
+  --muted:          #4a4842;
+  --subtle:         #6b6960;
+  --accent:         #b8461f;
   --accent-light:   #f5ede8;
   --border:         rgba(26, 25, 22, 0.10);
   --border-strong:  rgba(26, 25, 22, 0.20);
@@ -119,15 +119,15 @@ ul { list-style: none; }
   line-height: 1.12;
   letter-spacing: -0.02em;
   color: var(--text);
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
 }
 
 /* === SCROLL REVEAL ======================================== */
 
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal.visible {
@@ -172,9 +172,9 @@ ul { list-style: none; }
   color: #fff;
 }
 .btn-primary:hover {
-  background: #b04422;
+  background: #a33d1b;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(200, 82, 42, 0.28);
+  box-shadow: 0 6px 20px rgba(184, 70, 31, 0.30);
 }
 
 /* Ghost */
@@ -201,7 +201,7 @@ ul { list-style: none; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 249, 247, 0.9);
+  background: rgba(245, 243, 239, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
@@ -276,7 +276,7 @@ ul { list-style: none; }
 ============================================================ */
 
 .hero {
-  padding-block: clamp(5rem, 12vw, 9rem) clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(3rem, 7vw, 5rem) clamp(1.5rem, 3vw, 2rem);
 }
 
 /* Staggered entrance — CSS animation, no JS needed */
@@ -322,7 +322,7 @@ ul { list-style: none; }
   font-size: 1.125rem;
   color: var(--muted);
   max-width: 50ch;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
   animation: fadeUp 0.7s ease both 0.28s;
 }
 
@@ -331,7 +331,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   animation: fadeUp 0.7s ease both 0.4s;
 }
 
@@ -437,8 +437,8 @@ ul { list-style: none; }
 ============================================================ */
 
 .work {
-  padding-block: clamp(4rem, 8vw, 7rem);
-  background: var(--bg);
+  padding-block: clamp(1.5rem, 3vw, 2.5rem) clamp(2.5rem, 5vw, 4rem);
+  background: var(--surface);
 }
 
 /* Spotlight card */
@@ -447,9 +447,10 @@ ul { list-style: none; }
   grid-template-columns: 1fr;
   gap: 2rem;
   padding: 2rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-strong);
   border-radius: 12px;
-  background: var(--surface);
+  background: var(--bg);
+  box-shadow: 0 8px 40px rgba(26, 25, 22, 0.10);
   margin-bottom: 1.5rem;
 }
 
@@ -535,7 +536,7 @@ ul { list-style: none; }
 }
 
 .work-card-body p {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--muted);
   margin-bottom: 1rem;
 }
@@ -545,15 +546,15 @@ ul { list-style: none; }
 ============================================================ */
 
 .services {
-  padding-block: clamp(4rem, 8vw, 7rem);
-  background: var(--surface);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  background: var(--bg);
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -569,7 +570,7 @@ ul { list-style: none; }
 
 .service-card--featured {
   background: var(--accent-light);
-  border-color: rgba(200, 82, 42, 0.18);
+  border-color: rgba(184, 70, 31, 0.20);
 }
 
 .service-tier {
@@ -591,7 +592,7 @@ ul { list-style: none; }
 .service-price strong { font-weight: 400; }
 
 .service-desc {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--muted);
   line-height: 1.65;
   margin-bottom: 1.5rem;
@@ -636,11 +637,105 @@ ul { list-style: none; }
 }
 
 /* ============================================================
+   SERVICES CTA
+============================================================ */
+
+.services-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.services-cta-note {
+  font-size: 0.8125rem;
+  color: var(--subtle);
+}
+
+/* ============================================================
+   PROCESS
+============================================================ */
+
+.process {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  background: var(--surface);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .process-steps { grid-template-columns: repeat(3, 1fr); }
+}
+
+.process-step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.process-num {
+  font-family: var(--serif);
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.3;
+  flex-shrink: 0;
+}
+
+.process-step h3 {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.process-step p {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ============================================================
+   ABOUT
+============================================================ */
+
+.about {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  background: var(--bg);
+}
+
+.about-inner {
+  max-width: 54ch;
+}
+
+.about-inner p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.about-inner em {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--text);
+}
+
+.about-inner p:last-child { margin-bottom: 0; }
+
+/* ============================================================
    TESTIMONIALS
 ============================================================ */
 
 .testimonials {
-  padding-block: clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
   background: var(--dark);
   color: #fff;
 }
@@ -673,7 +768,7 @@ ul { list-style: none; }
   font-style: italic;
   font-size: 1rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.88);
   margin-bottom: 1.5rem;
 }
 
@@ -690,8 +785,16 @@ ul { list-style: none; }
   display: block;
   font-weight: 400;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.50);
   margin-top: 0.2rem;
+}
+
+/* ============================================================
+   TESTIMONIALS CTA
+============================================================ */
+
+.testimonials-cta {
+  margin-top: 2.5rem;
 }
 
 /* ============================================================
@@ -699,20 +802,28 @@ ul { list-style: none; }
 ============================================================ */
 
 .contact {
-  padding-block: clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
   background: var(--bg);
 }
 
 .contact .section-heading { margin-bottom: 1rem; }
 
+.contact-ctas {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
 .contact-body {
   color: var(--muted);
   max-width: 46ch;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-meta {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   font-size: 0.8125rem;
   color: var(--subtle);
 }
@@ -766,6 +877,93 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+/* ============================================================
+   PROSE PAGE (privacy, writing)
+============================================================ */
+
+.prose-page {
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.prose-page-inner {
+  max-width: 60ch;
+}
+
+.prose-page h1 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.prose-intro {
+  font-size: 1.125rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.prose-page-inner h2 {
+  font-family: var(--serif);
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-page-inner p {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.prose-page-inner p:last-child { margin-bottom: 0; }
+
+.prose-page-inner a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-page-inner a:hover { text-decoration: none; }
+
+.prose-updated {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8125rem !important;
+  color: var(--subtle) !important;
+}
+
+.prose-empty {
+  padding-block: clamp(4rem, 10vw, 7rem);
+  text-align: center;
+}
+
+.prose-empty h1 {
+  font-family: var(--serif);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  max-width: 22ch;
+  margin-inline: auto;
+  margin-bottom: 1.25rem;
+}
+
+.prose-empty p {
+  font-size: 1.0625rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
 }
 
 /* ============================================================

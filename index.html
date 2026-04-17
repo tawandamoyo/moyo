@@ -4,21 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Moyo. — Web development for African law firms, NGOs & professional services</title>
-  <meta name="description" content="Moyo. builds fast, institutional-grade websites for African law firms, NGOs, and civil society organisations. Working across Africa from Harare, Zimbabwe.">
-  <link rel="canonical" href="https://moyo.build">
+  <title>Moyo. | Bespoke Web & Software for African and Global Firms</title>
+  <meta name="description" content="Moyo. designs and builds high-trust websites and bespoke software for firms that need authority, speed, and measurable growth across African and global markets.">
+  <link rel="canonical" href="https://moyo.build/">
+
+  <!-- Favicons -->
+  <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <meta name="theme-color" content="#b8461f">
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="img/walpe-hero.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://moyo.build">
-  <meta property="og:title" content="Moyo. — Web development for African institutions">
-  <meta property="og:description" content="Your work is credible. Your website should be too.">
-  <meta property="og:locale" content="en_ZW">
+  <meta property="og:url" content="https://moyo.build/">
+  <meta property="og:title" content="Moyo. | Bespoke Web & Software for African and Global Firms">
+  <meta property="og:description" content="High-trust websites and bespoke software for firms competing across African and global markets.">
+  <meta property="og:image" content="https://moyo.build/img/favicon/android-chrome-512x512.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Moyo.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Moyo. | Bespoke Web & Software for African and Global Firms">
+  <meta name="twitter:description" content="High-trust websites and bespoke software for firms competing across African and global markets.">
+  <meta name="twitter:image" content="https://moyo.build/img/favicon/android-chrome-512x512.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <script defer data-domain="moyo.build" src="https://plausible.io/js/script.js"></script>
 
   <link rel="stylesheet" href="style.css">
 
@@ -26,17 +46,32 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Moyo.",
-    "url": "https://moyo.build",
-    "email": "hello@moyo.build",
-    "description": "Web development for African law firms, NGOs, and civil society organisations.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Harare",
-      "addressCountry": "ZW"
-    },
-    "areaServed": "Africa"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Moyo.",
+        "url": "https://moyo.build/",
+        "email": "hello@moyo.build",
+        "description": "Bespoke web and software partner for high-performing firms operating across African and global markets."
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Moyo.",
+        "url": "https://moyo.build/",
+        "email": "hello@moyo.build",
+        "serviceType": [
+          "Bespoke website design and development",
+          "Bespoke software solutions",
+          "Web strategy and ongoing web presence management"
+        ],
+        "areaServed": [
+          "Africa",
+          "Europe",
+          "North America",
+          "Middle East"
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -56,6 +91,7 @@
         <ul class="nav-links" role="list">
           <li><a href="#work">Work</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="mailto:hello@moyo.build" class="btn btn-pill">Start a project</a>
@@ -74,16 +110,15 @@
     ============================================================ -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <p class="eyebrow">Working across Africa from Harare</p>
-        <h1 id="hero-heading" class="hero-headline">Your work is credible.<br>Your website should be too.</h1>
-        <p class="hero-body">Moyo builds websites for African law firms, NGOs, and civil society organisations — institutions that need a web presence to match the weight of their work.</p>
+        <p class="eyebrow">Serving African and global firms</p>
+        <h1 id="hero-heading" class="hero-headline">Bespoke web and software.<br>Built for firms that compete globally.</h1>
+        <p class="hero-body">Moyo. designs and builds high-trust websites and bespoke software for firms and institutions that need authority, speed, and measurable outcomes.</p>
         <div class="hero-actions">
-          <a href="mailto:hello@moyo.build" class="btn btn-primary">Start a project</a>
+          <a href="mailto:hello@moyo.build?subject=Project%20enquiry" class="btn btn-primary">Start a project</a>
           <a href="#work" class="btn btn-ghost">See the work</a>
         </div>
         <div class="proof-bar">
           <span class="proof-label">Trusted by</span>
-          <span class="proof-divider" aria-hidden="true">·</span>
           <span>Mutema Attorneys</span>
           <span class="proof-divider" aria-hidden="true">·</span>
           <span>Walpe Africa</span>
@@ -103,7 +138,7 @@
           <span>Selected work</span>
         </div>
 
-        <h2 id="work-heading" class="section-heading reveal">Three clients. Three sectors.<br>One standard.</h2>
+        <h2 id="work-heading" class="section-heading reveal">Different clients, different sectors.<br>One standard.</h2>
 
         <!-- Spotlight: Walpe Africa -->
         <article class="work-spotlight reveal" aria-labelledby="walpe-title">
@@ -150,7 +185,7 @@
             <div class="work-card-body">
               <p class="work-tag">Law · Commercial</p>
               <h3 id="mutema-title">Mutema Attorneys</h3>
-              <p>A commercial law practice whose clients include corporates and institutions who judge credibility before the first meeting. The site needed to perform in that room without looking like every other law firm.</p>
+              <p>A commercial law practice whose clients include corporates and institutions who judge credibility before the first meeting. The site needed to meet expectation without looking like every other law firm.</p>
               <a href="https://mutemalaw.co.zw" class="work-link" target="_blank" rel="noopener noreferrer">Visit site →</a>
             </div>
           </article>
@@ -172,7 +207,7 @@
             <div class="work-card-body">
               <p class="work-tag">Agriculture · Enterprise</p>
               <h3 id="nyajena-title">Nyajena Agricultural Group</h3>
-              <p>An agricultural enterprise that needed to communicate scale and operational seriousness to partners, buyers, and investors who would arrive at the site without prior context.</p>
+              <p>An agricultural enterprise that needed to communicate scale and operational seriousness to partners, buyers, and investors arriving cold — with no prior relationship to lean on.</p>
               <a href="https://nyajenagroup.co.zw" class="work-link" target="_blank" rel="noopener noreferrer">Visit site →</a>
             </div>
           </article>
@@ -223,11 +258,11 @@
 
           <div class="service-card reveal">
             <p class="service-tier">Grow</p>
-            <p class="service-price">By <strong>negotiation</strong></p>
-            <p class="service-desc">For organisations that need a long-term web partner rather than a one-off project. Retainer, ongoing builds, or complex scopes — agreed in detail before anything begins.</p>
+            <p class="service-price">By <strong>arrangement</strong></p>
+            <p class="service-desc">For organisations that need a long-term web partner rather than a one-off project. Scope, cadence, and cost are agreed in writing before anything begins — no surprises.</p>
             <ul class="service-features" role="list">
               <li>Retainer or project basis</li>
-              <li>Ongoing updates & support</li>
+              <li>Ongoing updates &amp; support</li>
               <li>Priority availability</li>
               <li>Strategy input</li>
             </ul>
@@ -238,6 +273,74 @@
         <p class="services-footnote reveal">
           All projects: direct access throughout. No handoffs. No account managers. The person who scopes your project is the person who builds it. Compete and above are invoiced in three stages — on commencement, on design approval, on launch.
         </p>
+
+        <div class="services-cta reveal">
+          <a href="mailto:hello@moyo.build?subject=Project%20enquiry" class="btn btn-primary">Start a project</a>
+          <p class="services-cta-note">Most enquiries answered the same day.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESS
+    ============================================================ -->
+    <section class="process" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">
+          <span class="section-num">03</span>
+          <span>How it works</span>
+        </div>
+
+        <h2 id="process-heading" class="section-heading reveal">Simple by design.</h2>
+
+        <ol class="process-steps" role="list">
+
+          <li class="process-step reveal">
+            <span class="process-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Discovery</h3>
+              <p>We talk. I ask about your organisation, your audiences, and what a successful website looks like for you. No intake forms — a direct conversation.</p>
+            </div>
+          </li>
+
+          <li class="process-step reveal">
+            <span class="process-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Design &amp; build</h3>
+              <p>I design and build in the open, sharing progress at each stage. One round of revisions is built into every project.</p>
+            </div>
+          </li>
+
+          <li class="process-step reveal">
+            <span class="process-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Launch &amp; handover</h3>
+              <p>You go live with full documentation and the ability to update the site independently. No ongoing dependency on me unless you want it.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">
+          <span class="section-num">04</span>
+          <span>About</span>
+        </div>
+
+        <div class="about-inner">
+          <h2 id="about-heading" class="section-heading reveal">One person.<br>Full accountability.</h2>
+          <p class="reveal">Moyo means <em>heart</em>. In Shona, <em>kuita nemoyo</em> — to do with heart — means to bring seriousness, care, and full attention to the work. Not as a slogan. As a standard.</p>
+          <p class="reveal">Serious African institutions are represented online by websites that don't match the weight of their work. That gap costs them: in donor funding not received, in partnerships not formed, in professional credibility not established with the counterparties that matter. Moyo exists to close it.</p>
+          <p class="reveal">Moyo. is Tawanda Moyo. When you work with Moyo., you work with me directly. I scope the project, design it, build it, and hand it over. The person who answers your email is the person who writes your code.</p>
+          <p class="reveal">I take on a small number of projects at a time. Not because of capacity — because the work demands it.</p>
+        </div>
       </div>
     </section>
 
@@ -247,11 +350,11 @@
     <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
       <div class="container">
         <div class="section-label" aria-hidden="true">
-          <span class="section-num">03</span>
+          <span class="section-num">05</span>
           <span>What clients say</span>
         </div>
 
-        <h2 id="testimonials-heading" class="section-heading reveal">Hear it from them.</h2>
+        <h2 id="testimonials-heading" class="section-heading reveal">What changes when<br>the site is right.</h2>
 
         <div class="testimonials-grid">
 
@@ -272,11 +375,16 @@
           <blockquote class="testimonial reveal">
             <p>"Our previous website was costing us credibility without us realising it. Moyo built something that actually represents the scale of what we do. The response from partners has been immediate."</p>
             <footer>
-              <cite>Dr Clyton<br><span>Director, Nyajena Agricultural Group</span></cite>
+              <cite>Ms M Madzvamuse<br><span>Director, Nyajena Agricultural Group</span></cite>
             </footer>
           </blockquote>
 
         </div>
+
+        <div class="testimonials-cta reveal">
+          <a href="mailto:hello@moyo.build?subject=Project%20enquiry" class="btn btn-primary">Start a project</a>
+        </div>
+
       </div>
     </section>
 
@@ -286,22 +394,23 @@
     <section class="contact" id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <div class="section-label" aria-hidden="true">
-          <span class="section-num">04</span>
+          <span class="section-num">06</span>
           <span>Contact</span>
         </div>
 
         <h2 id="contact-heading" class="section-heading reveal">Tell me what<br>you're building.</h2>
-        <p class="contact-body reveal">Send an email and you'll hear back within one business day. No intake form. No automated response. No account manager.</p>
+        <p class="contact-body reveal">Send a short email — your organisation, what you need, and your timeline. You'll hear back within one business day. No intake form. No automated response. No account manager.</p>
 
-        <a href="mailto:hello@moyo.build" class="btn btn-primary btn-large reveal">hello@moyo.build</a>
+        <div class="contact-ctas reveal">
+          <a href="mailto:hello@moyo.build?subject=Project%20enquiry" class="btn btn-primary btn-large">hello@moyo.build</a>
+          <!-- TODO: Add WhatsApp link when number is confirmed — wa.me/263XXXXXXXXX -->
+        </div>
 
-        <p class="contact-meta reveal">Based in Harare, Zimbabwe (CAT) · Working across Africa</p>
+        <p class="contact-meta reveal">Operating on CAT · Serving African and global markets</p>
 
         <div class="contact-secondary reveal">
-          <!-- REPLACE: update these URLs with the real profiles -->
-          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <span aria-hidden="true">·</span>
-          <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <!-- TODO: Add LinkedIn URL when profile is ready -->
+          <a href="https://github.com/tawandamoyo" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
@@ -313,12 +422,11 @@
   ============================================================ -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <p>© 2025 Moyo. · <a href="mailto:hello@moyo.build">hello@moyo.build</a></p>
+      <p>© 2026 Moyo. · <a href="mailto:hello@moyo.build">hello@moyo.build</a></p>
       <div class="footer-links">
-        <!-- REPLACE: add real privacy policy and writing/blog URLs -->
-        <a href="#">Privacy</a>
+        <a href="privacy.html">Privacy</a>
         <span aria-hidden="true">·</span>
-        <a href="#">Writing</a>
+        <a href="writing.html">Writing</a>
       </div>
     </div>
   </footer>
